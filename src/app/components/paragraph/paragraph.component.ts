@@ -8,7 +8,7 @@ import { Paragraph } from 'src/app/paragraph';
 })
 export class ParagraphComponent {
 
-  //padodam uz augšu paragrāfu, kas sākuma ir masīvs ar tukšo stringu
+  //saņemam no augšas paragrāfu
   @Input()
   paragraph!: Paragraph[];
 }

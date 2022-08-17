@@ -7,7 +7,7 @@ import { Paragraph } from 'src/app/paragraph';
   styleUrls: ['./content-item.component.css']
 })
 export class ContentItemComponent {
-  //saņēmam datus
+  //saņemam datus
   @Input()
   paragraphs!: Paragraph[][];
 

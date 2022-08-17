@@ -17,10 +17,12 @@ export class ContentComponent implements OnInit {
   sentence!: Sentence
   updatedParagraph!: Paragraph[]
 
+  //kad komponente inicializējas mēs pasakam, ka paragrāfi ir paragrāfi no servisa
   ngOnInit() {
     this.paragraphs = this.paragraphService.getData()
   }
 
+  //pievinojam teikumu ar funkciju no servisa
   addSentence(i: number): void {
     this.paragraphService.addSentence(i)
   }
