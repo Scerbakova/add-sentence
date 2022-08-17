@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ParagraphService } from 'src/app/paragraph.service';
-import { Paragraph } from 'src/app/paragraph';
-import { Sentence } from 'src/app/sentence';
 
 @Component({
   selector: 'app-content',
@@ -13,9 +11,9 @@ export class ContentComponent implements OnInit {
 
   constructor(private paragraphService: ParagraphService) {}
 
-  paragraphs: Paragraph[][] = []
-  sentence!: Sentence
-  updatedParagraph!: Paragraph[]
+  paragraphs: string[][] = []
+  sentence!: string
+  updatedParagraph!: string[]
 
   //kad komponente inicializējas mēs pasakam, ka paragrāfi ir paragrāfi no servisa
   ngOnInit() {
