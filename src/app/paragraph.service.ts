@@ -22,7 +22,7 @@ export class ParagraphService {
     //iepriekš izveidotajā masīva beigās pivienojam modificēto paragrāfu un veidojam no paragrāfa stringu ar atstarpi starp ieprikējo saturu un jauno teikumu
     updatedParagraph.push(this.paragraphs[i].join(' '))
 
-    //pasakam, ka mūsu paragrāfs tagad it tas masīvs, ko tikko izveidojām
+    //pasakam, ka mūsu paragrāfs tagad ir tas masīvs, ko tikko izveidojām
     this.paragraphs[i] = updatedParagraph
   }  
 }
