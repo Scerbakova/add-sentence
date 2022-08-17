@@ -1,0 +1,8 @@
+<div class="content__wrapper">
+  <div class="paragraph__wrapper" *ngFor="let paragraph of paragraphs; let i = index">
+    <div class="button__wrapper">
+      <app-button (addNewSentence)="addSentence(i)"></app-button>
+    </div>
+    <app-paragraph [paragraph]="paragraph"></app-paragraph>
+  </div>
+</div>
