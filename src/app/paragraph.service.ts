@@ -9,17 +9,17 @@ export class ParagraphService {
     return this.paragraphs
   }
 
-  addSentence(i: number): void {
+  addSentence(index: number): void {
     //izveidojam jaunu tukšo masīvu kur glabāsies paragrāfs ar jauno teikumu
     let updatedParagraph = []
 
     //ar indeksa palīdzību ņēmam vajadzīgo paragrāfu, kopējām to saturu un pievinojam teikumu
-    this.paragraphs[i] = [...this.paragraphs[i], this.sentence]
+    this.paragraphs[index] = [...this.paragraphs[index], this.sentence]
 
-    //iepriekš izveidotajā masīva beigās pivienojam modificēto paragrāfu un veidojam no paragrāfa stringu ar atstarpi starp ieprikējo saturu un jauno teikumu
-    updatedParagraph.push(this.paragraphs[i].join(' '))
+    //iepriekš izveidota masīva beigās pivienojam modificēto paragrāfu un veidojam no paragrāfa stringu ar atstarpi starp iepriekšējo saturu un jauno teikumu
+    updatedParagraph.push(this.paragraphs[index].join(' '))
 
-    //pasakam, ka mūsu paragrāfs tagad ir tas masīvs, ko tikko izveidojām
-    this.paragraphs[i] = updatedParagraph
+    //pasakām, ka mūsu paragrāfs tagad ir tas masīvs, ko tikko izveidojām
+    this.paragraphs[index] = updatedParagraph
   }  
 }

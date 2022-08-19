@@ -15,7 +15,7 @@ export class ContentComponent implements OnInit {
   sentence!: string
   updatedParagraph!: string[]
 
-  //kad komponente inicializējas mēs pasakam, ka paragrāfi ir paragrāfi no servisa
+  //kad komponente inicializējas mēs pasakām, ka 'paragraphs' ir dati no servisa
   ngOnInit() {
     this.paragraphs = this.paragraphService.getData()
   }
